@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SCORES PAGE </title>
+  <style>
+  body {
+    background: darkslateblue;
+    color:#fff;
+}
+h2 {
+  text-align: center;
+}
+  .no_margin{
+    margin:0;
+    text-align:center;
+  }
+    .scoreboard {
+      border:2px solid #000;
+      display:flex;
+      width:90%;
+      padding:3px;
+     margin:40px auto;
+     box-shadow:3px 4px 7px #000;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     max-height:350px;
+     overflow-y:scroll;
+    }
+    .scores {
+      border-right:2px solid #000;
+    }
+    .scores , .result {
+      width:50%;
+      height:100%;
+    }
+    .mr , .int{
+      text-align:center;
+      width:70%;
+      font-weight:bold;
+      margin:10px auto;
+      padding:5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+    .mr {
+      background: #fff;
+      color:#000;
+    }
+    .int {
+      background: #272436;
+      color :#fff;
+    }
+    button {
+      width:100px;
+      padding:6px;
+      font-weight: bolder;
+      border:none;
+      background:#ff8000;
+      box-shadow:3px 4px 7px #000;
+      position: relative;
+      left:80%;
+      transform: translateX(-80%);
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+    button a {
+      text-decoration: none;
+      color:#fff;
+    }
+    .hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!--SO BASICALLY I JUST USED CSS IN THE HTML DOCUMENT BECAUSE THERE'S NOT MUCH STYLING HERE-->
+  
+  <!--SCORE BOARD -->
+  <div class="scoreboard hide" id="board">
+    
+   <!--NUMBERS SCORES -->
+    <div class="scores">
+      <h2 class="no_margin">Scores</h2>
+      <div id="int_scores"></div>
+    </div>
+    
+    <!--DIALOG WIN LOSS OR DARW -->
+      <div class="result">
+      <h2 class="no_margin">Match Result</h2>
+      <div id="dialog_scores"></div>
+
+    </div>
+</div>
+
+<!--WHAT TO SHOW IF SESSION STORAGE IS EMPTY!-->
+<h2 id="nst">NO SCORES RECORED YET🙃</h2>
+
+<!--BACK TO HOME BUTTON -->
+<button><a href="index.html">Home</a></button>
+
+<!--JAVASCTIPT -->
+  <script defer src="session_storage.js"></script>
+  <script defer src="update.js"></script>
+</body>
+</html>

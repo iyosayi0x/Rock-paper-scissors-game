@@ -1,0 +1,138 @@
+body {
+    background: darkslateblue;
+    color:#fff;
+}
+
+.main {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.move {
+    width:3.5rem;
+    height: 3.5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:2rem;
+    border-radius:50%;
+    box-shadow:3px 3px 8px #000;
+    outline:none;
+}
+.move img {
+    width:inherit;
+    height: inherit;
+    border-radius:inherit;
+}
+h1 {
+    text-align:center;
+    text-shadow:3px 4px 6px #000;
+}
+.score_board {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score_board p {
+    text-align:center;
+
+}
+.dialog {
+    width:80vw;
+    padding:.5rem 0;
+    margin :1.5rem auto;
+    text-align:center;
+    border-radius: .4rem;
+    background: #fff;
+    color:#000;
+    font-weight:bolder;
+    box-shadow:3px 3px 8px #000;
+}
+.box{
+    width:40%;
+    height: 150px;
+    border:1px solid #000;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    box-shadow:4px 5px  6px #000;
+    
+}
+.match_result {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hide {
+    display: none;
+}
+.head_tag {
+    text-align: center;
+    background:#000;
+    color:#fff;
+    padding:7px 0;
+}
+
+.box img {
+    width:5rem;
+    height: 5rem;
+    border-radius :50px;
+    position: relative;
+    left:50%;
+    top:30%;
+    transform:translate(-50%,-30%);
+    box-shadow:3px 2px 4px #000;
+}
+.game_timer {
+  width:7rem;
+  text-align:center;
+  font-weight: bolder;
+  padding:4px;
+  font-size:1.2rem;
+  margin:10px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: rgb(225,225,225);
+  background: rgba(225,225,225,.3);
+}
+
+.end_dialog button{
+  width:40%;
+  padding:8px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border:none;
+  outline:none;
+  font-weight:bolder;
+  color:#fff;
+}
+.end_options {
+  display:flex;
+  justify-content:space-evenly;
+  align-items: center;
+  margin:10px 0;
+}
+.try_again {
+  background:#3b81f1;
+}
+.view_scores {
+  background:#ccb424;
+}
+.end_dialog {
+  margin:30px 0;
+}
+.msg {
+  text-align: center;
+  font-weight:bold;
+}
+.end_dialog h2 {
+  text-align: center;
+  color:rgb(255,50,0);
+  text-shadow:3px 4px 7px #000;
+}
+.view_scores a {
+  text-decoration: none;
+  color:#fff;
+}

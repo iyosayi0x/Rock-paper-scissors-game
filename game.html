@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rock paper scissors game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="game_timer" id="timer">
+  00 : 59
+</div>
+
+  <div id="shell">
+  <div class="cont">
+    <!--GAME TIMER -->
+
+
+  <!-- SCORE BOARD -->
+<div class="score_board">
+
+  <div class="player">
+    <p class="text">Player</p>
+    <p class="player_score" id="player_score">0</p>
+  </div>
+
+  <div class="computer">
+    <p class="text">Computer</p>
+    <p class="comp_score" id="comp_score">0</p>
+  </div>
+
+
+</div>
+ 
+<!-- DIALOG BLOCK -->
+<div class="match_result hide" id="match_result">
+<!-- 
+  PLAYER CHOICE RESULT -->
+  <div class="player_result box">
+    <div class="head_tag">You</div>
+      <img src="" id="player_choice" alt="choice">
+    
+
+  </div>
+<!-- 
+  COMPUTER CHOICE RESULT -->
+  <div class="computer_result box">
+    <div class="head_tag">Computer</div>
+    <img src="" id="computer_choice" alt="choice">
+    
+  </div>
+</div>
+<div class="dialog" id="dialog">choose a move</div>
+
+
+
+<!-- STORES ALL BUTTONS -->
+</div>
+     <div class="main">
+       <button id="rock" class="move"><img src="\images\rock.png" alt="ROCK"></button>
+       <button id="paper" class="move"><img src="\images\paper.png" alt="PAPER"></button>
+       <button id="scissors" class="move"><img src="\images\scissors.png" alt="SCISSORSS"></button>
+     </div>
+     
+     </div>
+  
+  <div class="end_dialog hide" data-end>
+    <h2>Game Over </h2>
+    <div class="msg" data-msg>You lost to computer's</div>
+    <div class="end_options">
+      <button class="try_again" data-try>Try again</button>
+      <button class="view_scores" data-scores><a href="scores.html">My Scores</a></button>
+    </div>
+  </div>
+
+  <script defer src="script.js"></script>
+  <script defer src="session_storage.js"></script>
+</body>
+</html>
